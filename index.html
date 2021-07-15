@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="calculadora IMC" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>Calculadora IMC</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <span class="material-icons pink-icon"> wb_sunny </span>
+        <a href="#">Home</a>
+        <a href="./pages/imc.html">O que é IMC</a>
+        <a href="./pages/about.html">Sobre Nós</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Cálculo de IMC</h1>
+      </section>
+      <form name="calculo_imc" id="imc_form" action="">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Ex: Joao Silva"
+          required
+        />
+        <label for="peso">Peso:</label>
+        <input type="number" name="peso" min="0" max="600" id="peso" required />
+        <label for="altura">Altura:</label>
+        <input
+          type="number"
+          name="altura"
+          id="altura"
+          min="10"
+          max="300"
+          required
+        />
+        <label for="mostrar_nome">
+          <input
+            type="checkbox"
+            name="mostrar_nome"
+            id="mostrar_nome"
+            value="mostrar_nome"
+          />
+          Mostrar Nome?
+        </label>
+        <label for="public">Mostrar condição física?</label>
+        <select name="public" id="public">
+          <option value="sim" selected>Sim</option>
+          <option value="nao">Não</option>
+        </select>
+        <div>
+          <button type="submit" id="submit">Calcular IMC</button>
+          <button type="reset" id="reset">Limpar</button>
+        </div>
+      </form>
+      <p class="target"></p>
+    </main>
+    <footer>
+      <p>All rights reserved.</p>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

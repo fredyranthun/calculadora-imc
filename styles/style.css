@@ -1,0 +1,93 @@
+:root {
+    --cornflower: #4c5270;
+    --hot-pink: #f652a0;
+    --cyan: #36eee0;
+    --tiffany-blue: #bcece0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--cyan);
+}
+
+header {
+    background-color: var(--cornflower);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav a,
+header nav span {
+    color: var(--hot-pink);
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--tiffany-blue);
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 3px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+main form input {
+    background-color: var(--cornflower);
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--cyan);
+}
+
+main form button {
+    border-radius: 3px;
+    border: 2px solid var(--cornflower);
+    background-color: var(--cornflower);
+    padding: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    position: relative;
+}
+
+main form textarea {
+    border-radius: 3px;
+    border: none;
+    border: 2px solid var(--cornflower);
+    background-color: var(--cornflower);
+    padding: 3px;
+    color: var(--cyan);
+}
+
+main form button:hover {
+    border: 2px solid var(--hot-pink);
+}
+
+main form button:active {
+    background-color: var(--hot-pink);
+}
+
+footer {
+    max-width: 100vh;
+    margin: auto;
+}
+
+footer p {
+    text-align: center;
+}
